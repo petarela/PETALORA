@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PETALORA — Flowers & Gifts. Mixed flower bouquets for birthdays, anniversaries, proposals and special moments.">
+  <meta name="theme-color" content="#7d1835">
+  <title>PETALORA — Flowers & Gifts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-mini" href="#home" aria-label="PETALORA home">
+      <span class="brand-mark">P</span><span>PETALORA</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#bouquets">Bouquets</a>
+      <a href="#about">About</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">FLOWERS & GIFTS</span>
+        <h1>Flowers That<br><em>Speak Your Heart.</em></h1>
+        <p>Beautiful mixed-flower bouquets, wrapped with care and made for the moments that matter.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#bouquets">Explore Bouquets</a>
+          <a class="btn ghost" href="#order">Order Now</a>
+        </div>
+        <div class="trust-row">
+          <span>🌸 Fresh flowers</span>
+          <span>🎀 Premium wrapping</span>
+          <span>🚚 Delivery available</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/bouquet-signature.png" alt="PETALORA mixed flower bouquet">
+        <div class="floating-note">A little bouquet,<br>a lot of feelings. ♡</div>
+      </div>
+    </section>
+
+    <section class="section" id="bouquets">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>Choose your bouquet</h2>
+        </div>
+        <p>Starting from <strong>৳399</strong></p>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <div class="product-art art-1">🌸</div>
+          <div class="product-body">
+            <span class="tag">BEST FOR SMALL SURPRISES</span>
+            <h3>Petal Mini</h3>
+            <p>3–5 mixed flowers, greenery and a simple elegant wrap.</p>
+            <div class="product-foot"><b>৳399</b><button onclick="selectBouquet('Petal Mini',399)">Order</button></div>
+          </div>
+        </article>
+
+        <article class="product featured">
+          <div class="badge">POPULAR</div>
+          <div class="product-art art-2">🌹🌸</div>
+          <div class="product-body">
+            <span class="tag">ROMANTIC</span>
+            <h3>Love Bloom</h3>
+            <p>Red + pink flowers with premium wrapping and ribbon.</p>
+            <div class="product-foot"><b>৳599</b><button onclick="selectBouquet('Love Bloom',599)">Order</button></div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-art art-3">💐</div>
+          <div class="product-body">
+            <span class="tag">SIGNATURE</span>
+            <h3>Petalora Classic</h3>
+            <p>Gerbera, lily, filler flowers and greenery in a premium wrap.</p>
+            <div class="product-foot"><b>৳799</b><button onclick="selectBouquet('Petalora Classic',799)">Order</button></div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-art art-4">🌷❤️</div>
+          <div class="product-body">
+            <span class="tag">ANNIVERSARY</span>
+            <h3>Pink Romance</h3>
+            <p>Pink lily + red/pink gerbera with luxury decoration.</p>
+            <div class="product-foot"><b>৳999</b><button onclick="selectBouquet('Pink Romance',999)">Order</button></div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-art art-5">👑💐</div>
+          <div class="product-body">
+            <span class="tag">PREMIUM</span>
+            <h3>Royal Petalora</h3>
+            <p>Large mixed bouquet with premium wrap, ribbon and card.</p>
+            <div class="product-foot"><b>৳1,299</b><button onclick="selectBouquet('Royal Petalora',1299)">Order</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-image"><img src="assets/cover.png" alt="PETALORA floral branding"></div>
+      <div class="story-copy">
+        <span class="eyebrow">WHY PETALORA</span>
+        <h2>Not just flowers.<br><em>A feeling.</em></h2>
+        <p>We create mixed-flower bouquets for birthdays, anniversaries, proposals and those random days when you simply want to make someone smile.</p>
+        <div class="features">
+          <div><b>01</b><span>Fresh & carefully selected flowers</span></div>
+          <div><b>02</b><span>Handmade premium wrapping</span></div>
+          <div><b>03</b><span>Personal greeting card available</span></div>
+          <div><b>04</b><span>Delivery arranged for your occasion</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="occasion">
+      <span class="eyebrow">MADE FOR YOUR MOMENT</span>
+      <h2>Every occasion deserves flowers.</h2>
+      <div class="occasion-grid">
+        <div><span>🎂</span><h3>Birthday</h3><p>Make their day brighter.</p></div>
+        <div><span>❤️</span><h3>Anniversary</h3><p>Celebrate your story.</p></div>
+        <div><span>💍</span><h3>Proposal</h3><p>Say it with flowers.</p></div>
+        <div><span>🎁</span><h3>Surprise</h3><p>No reason needed.</p></div>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-intro">
+        <span class="eyebrow">READY TO SEND SOME LOVE?</span>
+        <h2>Place your order</h2>
+        <p>Fill in the details and the website will prepare a WhatsApp order message for you.</p>
+        <div class="mini-price">🚚 Delivery charge is calculated separately by location.</div>
+      </div>
+
+      <form class="order-form" id="orderForm">
+        <label>Full name<input id="name" required placeholder="Your name"></label>
+        <label>Phone number<input id="phone" required inputmode="tel" placeholder="01XXXXXXXXX"></label>
+        <label>Bouquet
+          <select id="bouquet" required>
+            <option value="">Select a bouquet</option>
+            <option>Petal Mini — ৳399</option>
+            <option>Love Bloom — ৳599</option>
+            <option>Petalora Classic — ৳799</option>
+            <option>Pink Romance — ৳999</option>
+            <option>Royal Petalora — ৳1,299</option>
+            <option>Custom bouquet</option>
+          </select>
+        </label>
+        <label>Quantity<input id="quantity" type="number" min="1" value="1" required></label>
+        <label>Delivery date<input id="date" type="date" required></label>
+        <label>Delivery address<textarea id="address" required placeholder="Full delivery address"></textarea></label>
+        <label>Greeting card message<textarea id="message" placeholder="Write your message (optional)"></textarea></label>
+        <button class="btn primary full" type="submit">Order via WhatsApp 💬</button>
+        <p class="form-note">Before publishing, replace the demo WhatsApp number in <code>script.js</code> with your business number.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="PETALORA logo">
+      <div><h3>PETALORA</h3><p>Flowers & Gifts</p></div>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>📱 WhatsApp: 01XXXXXXXXX</p>
+      <p>📩 Facebook: PETALORA | Flowers & Gifts</p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Every day · 9 AM – 10 PM</p>
+      <p>Online orders only</p>
+    </div>
+    <div class="copyright">© <span id="year"></span> PETALORA. Made with love. 🌸</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
